@@ -5,6 +5,7 @@
 
 思路：
     今日头条为动态页面，采用爬虫框架为scrapy+splash（splahs为轻量级js渲染引擎）
+    从今日头条获取各个热点模块的链接，动态渲染各个模块的主页，获取各篇文章的链接
    
 工具：
     Mac, 阿里云服务器A，B，C
@@ -15,7 +16,12 @@
     MONGO_DB_URI = "mongodb://server:27017" #mongodb服务器
     MONGO_DB_NAME = "toutiao"
     
-生成词云图：
+服务器测试：
+    写了个脚步（test_splash_server.py）测试当前部署的splash服务器是否可达
+    
+词云图制作：
+    脚本获取数据库里的文章，装换成字符串，用jieba进行词频统计，再使用wordcloud制作词云图
+    
     
     
 
