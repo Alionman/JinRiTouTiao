@@ -15,6 +15,7 @@
     MONGO_DB_URI = "mongodb://server:27017" #mongodb服务器
     MONGO_DB_NAME = "toutiao"
     
-
+生成词云图：
+    
     
 
